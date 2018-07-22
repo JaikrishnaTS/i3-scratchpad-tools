@@ -44,4 +44,7 @@ if dm_proc.returncode != 0:  # possibly user pressed Esc, do nothing
 focus_win_name = sel_focus[0].strip()
 
 # focus it
-sp_windows[focus_win_name].command('focus')
+try:
+    sp_windows[focus_win_name].command('focus')
+except KeyError as e:
+    sys.exit(2)
