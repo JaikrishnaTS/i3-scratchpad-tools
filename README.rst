@@ -1,3 +1,23 @@
+i3-scratchpad-dmenu
+###################
+
+i3ipc program to list scratchpad containers with dmenu and focus the selection.
+
+Install
+=======
+
+* Install i3ipc python module: ``pip3 install --user i3ipc``
+
+* Copy the executable to ``~/.local/bin/``
+
+* Suggested keybindings
+
+  .. code:: bash
+
+    # focus any scratchpad window
+    bindsym $mod+t exec ~/.local/bin/i3-scratchpad-dmenu.py
+
+
 i3-scratchpad-swap
 ##################
 
